@@ -17,3 +17,68 @@ class UserCreationForm(admin_forms.UserCreationForm):
         error_messages = {
             "username": {"unique": _("This username has already been taken.")}
         }
+
+
+class CustomUserCreationForm(UserCreationForm):
+    class Meta(UserCreationForm.Meta):
+        model = User
+        fields = (
+            "username",
+            "email",
+            "first_name",
+            "last_name",
+            "password1",
+            "password2",
+        )
+
+
+class CustomUserChangeForm(UserChangeForm):
+    class Meta(UserChangeForm.Meta):
+        model = User
+        fields = (
+            "username",
+            "email",
+            "first_name",
+            "last_name",
+            "password1",
+            "password2",
+        )
+
+
+class LandlordProfileForm(UserCreationForm):
+    class Meta(UserCreationForm.Meta):
+        model = User
+        fields = (
+            "username",
+            "email",
+            "first_name",
+            "last_name",
+            "password1",
+            "password2",
+        )
+
+
+class TenantProfileForm(UserCreationForm):
+    class Meta(UserCreationForm.Meta):
+        model = User
+        fields = (
+            "username",
+            "email",
+            "first_name",
+            "last_name",
+            "password1",
+            "password2",
+        )
+
+
+class PropertyManagerProfileForm(UserCreationForm):
+    class Meta(UserCreationForm.Meta):
+        model = User
+        fields = (
+            "username",
+            "email",
+            "first_name",
+            "last_name",
+            "password1",
+            "password2",
+        )
