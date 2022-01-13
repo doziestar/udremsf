@@ -1,0 +1,6 @@
+# apt update && apt upgrade -y
+# # create new user and user group and make them sudoers
+# # create a new user
+# useradd -m -G sudo -s /bin/bash $USERNAME
+
+# ssh-copy-id username@remote_host

@@ -278,6 +278,8 @@ project.css
 project.min.css
 vendors.js
 *.min.js
-.env
-.envs/*
-!.envs/.local/
+# env
+# envs/*
+# envs/.local/
+
+linux.yaml
