@@ -47,20 +47,20 @@ services:
   redis:
     image: redis:6
 
-  celeryworker:
-    <<: *django
-    image: udrems_production_celeryworker
-    command: /start-celeryworker
+  # celeryworker:
+  #   <<: *django
+  #   image: udrems_production_celeryworker
+  #   command: /start-celeryworker
 
-  celerybeat:
-    <<: *django
-    image: udrems_production_celerybeat
-    command: /start-celerybeat
+  # celerybeat:
+  #   <<: *django
+  #   image: udrems_production_celerybeat
+  #   command: /start-celerybeat
 
-  flower:
-    <<: *django
-    image: udrems_production_flower
-    command: /start-flower
+  # flower:
+  #   <<: *django
+  #   image: udrems_production_flower
+  #   command: /start-flower
 
   awscli:
     build:
